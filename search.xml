@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+    
+    <entry>
+      <title><![CDATA[是时候学习Kotlin了]]></title>
+      <url>/2017/05/19/%E6%98%AF%E6%97%B6%E5%80%99%E5%AD%A6%E4%B9%A0Kotlin%E4%BA%86/</url>
+      <content type="html"><![CDATA[<h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>Kotlin火了，真的，以前我们搞kotlin只是野路子，商用项目中不提倡使用Kotlin，因为没有多少人愿意去了解，而我也只是在项目的测试模块中用用，解解渴，探探路。现在谷歌已经力挺Kotlin了，Kotlin成为Android开发语言的第一选择，相信你也迫不及待想要了解Kotlin了，接下来我们开始Kotlin 从入门到放弃之旅吧。</p>
+<h4 id="Kotlin是啥"><a href="#Kotlin是啥" class="headerlink" title="Kotlin是啥"></a>Kotlin是啥</h4><h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p>Kotlin是一种基于JVM的编程语言，和Java一样都是静态类型语言，由大名顶顶的JetBrains开发（JetBrains是Intellij idea的开发商，AndroidStudio也是他们和谷歌一起打造的）。</p>
+<p>Kotlin 100%兼容Java，java开发的一些轮子，使用Kotlin开发的时候仍然能使用。没有使用Kotlin特性的功能，java也能无缝调用，这是Kotlin最大的一个优势。</p>
+<h4 id="Kotlin-其他特性："><a href="#Kotlin-其他特性：" class="headerlink" title="Kotlin 其他特性："></a>Kotlin 其他特性：</h4><p>支持lambda，jdk1.8也可以支持了，Android开发使用1.8编译也能使用此功能，因此不加分</p>
+<p>空安全：我们遇到的最频繁的坑，可能就是NPE了，而Kotlin能便捷的替我们避免NPE</p>
+<p>扩展方法：可以为已有的类添加新的方法, 比继承更加简洁和优雅</p>
+<p>数据类：POJO类，自动生成setter，getter，equals， hashCode。可以少写很多代码</p>
+<p>扩展接口：类似jdk1.8中default方法，但是Android还不支持使用jdk中这个特性</p>
+<p>Kotlin不是专门用来开发Android的，但是目前有很多Android项目 和 web服务端项目开始用Kotlin开发。同时kotlin能编译成javascript，因此也可以做网页开发</p>
+<h4 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h4><p><a href="https://kotlinlang.org/" target="_blank" rel="external">Kotlin 官网</a></p>
+<p><a href="https://github.com/huanglizhuo/kotlin-in-chinese?utm_source=tuicool&amp;utm_medium=referral" target="_blank" rel="external">Kotlin中文文档</a></p>
+<p><a href="http://www.infoq.com/cn/news/2015/06/Android-JVM-JetBrains-Kotlin" target="_blank" rel="external">Kotlin：Android世界的Swift</a></p>
+<p><a href="https://www.zhihu.com/question/25289041" target="_blank" rel="external">如何评价 Kotlin 语言</a></p>
+<p><a href="http://blog.csdn.net/mrseasons/article/details/47144519" target="_blank" rel="external">Kotlin与java交互</a></p>
+<p><a href="http://www.indiepig.com/blog/kotlin-hello-js.php" target="_blank" rel="external">Kotlin与JavaScript</a></p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[夏天来le]]></title>
+      <url>/2017/05/19/%E5%A4%8F%E5%A4%A9%E6%9D%A5le/</url>
+      <content type="html"><![CDATA[<p>天气越来越热了，连续几天35℃，尽管如此，我还是很喜欢北京的，比较少下雨，什么都方便，而我所从事的互联网行业，在北京也是如火如荼。</p>
+<p>今天和妹子约着一起吃了个饭，超级开心。不过被叫大叔了，老了啊！</p>
+<p>妹子人很好，跟我说结婚不用车，不用房，不用礼金，她家都不缺。还说很喜欢小孩，家里也在催他。还说咋们两要是一起的话不会吵架，我年龄大，会迁就她…</p>
+<p>我心想，哪有这好的事请，赶紧吃完还要去写代码呢~</p>
+]]></content>
+      
+        
+    </entry>
+    
+  
+  
+</search>
