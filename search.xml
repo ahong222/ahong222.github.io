@@ -19,7 +19,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[“kotlin开发Android：开发游戏2048”]]></title>
+      <title><![CDATA[Kotlin开发Android：开发游戏2048]]></title>
       <url>/2017/06/12/Kotlin%E5%BC%80%E5%8F%91Android%EF%BC%9A%E5%BC%80%E5%8F%91%E6%B8%B8%E6%88%8F2048/</url>
       <content type="html"><![CDATA[<h2 id="基本玩法"><a href="#基本玩法" class="headerlink" title="基本玩法"></a>基本玩法</h2><p>1.经典版是4*4的♦️<br>2.每次滑动后从没有♦️的地方随机生成一个♦️，数据大小一般是2，也可以是4<br>3.每次滑动如果前方非新生成的♦️，大小相同则可以合并，如果前方是空格，则一直往前移动<br>4.最大数达到2048则赢，格子不能滑动也不能合并则游戏结束</p>
 <h2 id="基本思路"><a href="#基本思路" class="headerlink" title="基本思路"></a>基本思路</h2><h3 id="算法："><a href="#算法：" class="headerlink" title="算法："></a>算法：</h3><p>1.用一个二维数组存放方格中的数据<br>2.滑动时先根据方向，将数组进行方向变换，使得永远往X轴正向移动<br>如数组向上滑动的处理步骤<br>i.初始状态<br>0,2,0,0<br>0,2,0,0<br>0,0,0,0<br>0,0,0,0<br>ii.转换方向后(向上：顺时针90度)<br>0,0,0,0<br>0,0,2,2<br>0,0,0,0<br>0,0,0,0<br>iii.向右滑动<br>0,0,0,0<br>0,0,0,4<br>0,0,0,0<br>0,0,0,0<br>iiii.恢复原方向(逆时针90度)<br>0,4,0,0<br>0,0,0,0<br>0,0,0,0<br>0,0,0,0</p>
@@ -38,7 +38,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[开发Android：提升Android开发效率]]></title>
+      <title><![CDATA[Kotlin开发Android：提升Android开发效率]]></title>
       <url>/2017/05/25/Kotlin%E5%BC%80%E5%8F%91Android%EF%BC%9A%E6%8F%90%E5%8D%87Android%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87/</url>
       <content type="html"><![CDATA[<h4 id="1-去掉findViewById"><a href="#1-去掉findViewById" class="headerlink" title="1.去掉findViewById"></a>1.去掉findViewById</h4><p>只需要在App Module的build.gradle 中添加<br>apply plugin: ‘kotlin-android-extensions’//手动添加<br>代码然后就可以这样写<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">override fun onCreate(savedInstanceState: Bundle?) &#123;</div><div class="line">    super.onCreate(savedInstanceState)</div><div class="line">    setContentView(R.layout.activity_kotlin)</div><div class="line">    //直接使用activity_kotlin.xml中的id</div><div class="line">    test.setOnClickListener &#123; view-&gt; onClickTest(view) &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <p>inflate生成的View，也可以直接操作xml中id<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">fun onClickTest(view: View):String?&#123;</div><div class="line">    var view:View   = LayoutInflater.from(this).inflate(R.layout.dialog_kotlin,null, false);</div><div class="line">    val text:String = &quot;clicked this is dialog!&quot;;</div><div class="line">    message = text;</div><div class="line">    view.message.setText(message);</div><div class="line">    var dialog: AlertDialog = AlertDialog.Builder(this).setView(view).setPositiveButton(&quot;this&quot;, DialogInterface.OnClickListener &#123; dialog, which -&gt;  onClickDialog(dialog, which, text)&#125;).create();</div><div class="line">    dialog.show();</div><div class="line"></div><div class="line">    return null;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
@@ -74,7 +74,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[开发Android：基本语法]]></title>
+      <title><![CDATA[Kotlin开发Android：基本语法]]></title>
       <url>/2017/05/25/Kotlin%E5%BC%80%E5%8F%91Android%EF%BC%9A%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</url>
       <content type="html"><![CDATA[<h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><p>1.常量<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">val text:String = &quot;hell world!&quot;;</div></pre></td></tr></table></figure></p>
 <p>2.变量<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var view:View   = LayoutInflater.from(this).inflate(R.layout.dialog_kotlin,null, false);</div></pre></td></tr></table></figure></p>
@@ -106,7 +106,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[开发Android：环境搭建]]></title>
+      <title><![CDATA[Kotlin开发Android：环境搭建]]></title>
       <url>/2017/05/25/Kotlin%E5%BC%80%E5%8F%91Android%EF%BC%9A%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
       <content type="html"><![CDATA[<h2 id="1-Android-Studio安装Kotlin插件"><a href="#1-Android-Studio安装Kotlin插件" class="headerlink" title="1.Android Studio安装Kotlin插件"></a>1.Android Studio安装Kotlin插件</h2><p>Android studio－&gt;Preferences－&gt;Plugin－&gt;搜索Kotlin并安装<br>AndroidStudio3.0已经自带插件了，当新建一个工程时，勾选kotlin支持，会自动添加kotlin依赖。因此推荐大家使用AS3.0或更高版本</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/2858322-da018e89a7bcd9c5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="屏幕快照 2017-04-04 下午12.22.07.png"></p>
