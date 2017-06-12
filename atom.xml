@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://kotlin.xin/"/>
-  <updated>2017-06-12T13:31:18.000Z</updated>
+  <updated>2017-06-12T13:38:33.000Z</updated>
   <id>http://kotlin.xin/</id>
   
   <author>
@@ -20,10 +20,10 @@
     <link href="http://kotlin.xin/2017/06/12/%E6%88%91%E6%83%B3%E5%87%BA%E5%8E%BB%E7%9C%8B%E7%9C%8B/"/>
     <id>http://kotlin.xin/2017/06/12/我想出去看看/</id>
     <published>2017-06-12T13:16:41.000Z</published>
-    <updated>2017-06-12T13:31:18.000Z</updated>
+    <updated>2017-06-12T13:38:33.000Z</updated>
     
     <content type="html"><![CDATA[<p>曾经年少，谁没有个梦想，如今而立之年，早已因为生存，磨平了棱角。<br>人生有多长，余下的不过十分之五。剩下的时间，我不想浪费。<br>世界那么大，我想出去看看，但是不是你想看就能看。<br>前进的道路是寂寞的，但不是孤独的，也许某个角落，也有和我一样的人。</p>
-<p><img src="/2017/06/12/我想出去看看/img1.jpg" alt="梦想"></p>
+<p><img alt="game4.jpg" src="/2017/06/12/我想出去看看/img1.jpg" width="300"></p>
 ]]></content>
     
     <summary type="html">
@@ -212,16 +212,16 @@
     <link href="http://kotlin.xin/2017/05/19/%E5%A4%8F%E5%A4%A9%E6%9D%A5le/"/>
     <id>http://kotlin.xin/2017/05/19/夏天来le/</id>
     <published>2017-05-19T07:25:12.000Z</published>
-    <updated>2017-05-24T16:32:05.000Z</updated>
+    <updated>2017-06-12T13:40:30.000Z</updated>
     
     <content type="html"><![CDATA[<p>天气越来越热了，连续几天35℃，尽管如此，我还是很喜欢北京的，比较少下雨，什么都方便，而我所从事的互联网行业，在北京也是如火如荼。</p>
-<p><img src="/2017/05/19/夏天来le/img1.jpg" alt="遛弯"></p>
+<p><img alt="夏" src="/2017/05/19/夏天来le/img1.jpg" width="300"></p>
 ]]></content>
     
     <summary type="html">
     
       &lt;p&gt;天气越来越热了，连续几天35℃，尽管如此，我还是很喜欢北京的，比较少下雨，什么都方便，而我所从事的互联网行业，在北京也是如火如荼。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/2017/05/19/夏天来le/img1.jpg&quot; alt=&quot;遛弯&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;夏&quot; src=&quot;/2017/05/19/夏天来le/img1.jpg&quot; width=&quot;300&quot;&gt;&lt;/p&gt;
 
     
     </summary>
