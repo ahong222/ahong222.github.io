@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://kotlin.xin/"/>
-  <updated>2017-05-24T16:48:18.000Z</updated>
+  <updated>2017-06-12T13:31:18.000Z</updated>
   <id>http://kotlin.xin/</id>
   
   <author>
@@ -14,6 +14,54 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我想出去看看</title>
+    <link href="http://kotlin.xin/2017/06/12/%E6%88%91%E6%83%B3%E5%87%BA%E5%8E%BB%E7%9C%8B%E7%9C%8B/"/>
+    <id>http://kotlin.xin/2017/06/12/我想出去看看/</id>
+    <published>2017-06-12T13:16:41.000Z</published>
+    <updated>2017-06-12T13:31:18.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>曾经年少，谁没有个梦想，如今而立之年，早已因为生存，磨平了棱角。<br>人生有多长，余下的不过十分之五。剩下的时间，我不想浪费。<br>世界那么大，我想出去看看，但是不是你想看就能看。<br>前进的道路是寂寞的，但不是孤独的，也许某个角落，也有和我一样的人。</p>
+<p><img src="/2017/06/12/我想出去看看/img1.jpg" alt="梦想"></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;曾经年少，谁没有个梦想，如今而立之年，早已因为生存，磨平了棱角。&lt;br&gt;人生有多长，余下的不过十分之五。剩下的时间，我不想浪费。&lt;br&gt;世界那么大，我想出去看看，但是不是你想看就能看。&lt;br&gt;前进的道路是寂寞的，但不是孤独的，也许某个角落，也有和我一样的人。&lt;/p&gt;
+&lt;p&gt;
+    
+    </summary>
+    
+      <category term="杂" scheme="http://kotlin.xin/categories/%E6%9D%82/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>“kotlin开发Android：开发游戏2048”</title>
+    <link href="http://kotlin.xin/2017/06/12/kotlin%E5%BC%80%E5%8F%91Android%EF%BC%9A%E5%BC%80%E5%8F%91%E6%B8%B8%E6%88%8F2048/"/>
+    <id>http://kotlin.xin/2017/06/12/kotlin开发Android：开发游戏2048/</id>
+    <published>2017-06-12T13:13:50.000Z</published>
+    <updated>2017-06-12T13:16:04.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="基本玩法"><a href="#基本玩法" class="headerlink" title="基本玩法"></a>基本玩法</h2><p>1.经典版是4*4的♦️<br>2.每次滑动后从没有♦️的地方随机生成一个♦️，数据大小一般是2，也可以是4<br>3.每次滑动如果前方非新生成的♦️，大小相同则可以合并，如果前方是空格，则一直往前移动<br>4.最大数达到2048则赢，格子不能滑动也不能合并则游戏结束</p>
+<h2 id="基本思路"><a href="#基本思路" class="headerlink" title="基本思路"></a>基本思路</h2><h3 id="算法："><a href="#算法：" class="headerlink" title="算法："></a>算法：</h3><p>1.用一个二维数组存放方格中的数据<br>2.滑动时先根据方向，将数组进行方向变换，使得永远往X轴正向移动<br>如数组向上滑动的处理步骤<br>i.初始状态<br>0,2,0,0<br>0,2,0,0<br>0,0,0,0<br>0,0,0,0<br>ii.转换方向后(向上：顺时针90度)<br>0,0,0,0<br>0,0,2,2<br>0,0,0,0<br>0,0,0,0<br>iii.向右滑动<br>0,0,0,0<br>0,0,0,4<br>0,0,0,0<br>0,0,0,0<br>iiii.恢复原方向(逆时针90度)<br>0,4,0,0<br>0,0,0,0<br>0,0,0,0<br>0,0,0,0</p>
+<p>3.移动计算完毕后将方向转换回去<br>4.得到运动轨迹数据，刷新UI</p>
+<h3 id="UI"><a href="#UI" class="headerlink" title="UI:"></a>UI:</h3><p>1.主要游戏区域使用一个FrameLayout，当前的♦️都用BlockTextView表示<br>2.♦️的位置使用translationX，translationY调整<br>3.每个♦️做动画时使用Animator来更新translationX或者translationY<br>截图：<br><img src="https://github.com/ahong222/kotlin_2048/blob/master/game1.jpg?raw=true" alt="game1.jpg"></p>
+<h2 id="工程地址："><a href="#工程地址：" class="headerlink" title="工程地址："></a>工程地址：</h2><p><a href="https://github.com/ahong222/kotlin_2048" target="_blank" rel="external">https://github.com/ahong222/kotlin_2048</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;基本玩法&quot;&gt;&lt;a href=&quot;#基本玩法&quot; class=&quot;headerlink&quot; title=&quot;基本玩法&quot;&gt;&lt;/a&gt;基本玩法&lt;/h2&gt;&lt;p&gt;1.经典版是4*4的♦️&lt;br&gt;2.每次滑动后从没有♦️的地方随机生成一个♦️，数据大小一般是2，也可以是4&lt;br&gt;3.每次
+    
+    </summary>
+    
+      <category term="kotlin" scheme="http://kotlin.xin/categories/kotlin/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>开发Android：提升Android开发效率</title>

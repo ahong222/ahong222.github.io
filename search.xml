@@ -3,6 +3,41 @@
   
     
     <entry>
+      <title><![CDATA[我想出去看看]]></title>
+      <url>/2017/06/12/%E6%88%91%E6%83%B3%E5%87%BA%E5%8E%BB%E7%9C%8B%E7%9C%8B/</url>
+      <content type="html"><![CDATA[<p>曾经年少，谁没有个梦想，如今而立之年，早已因为生存，磨平了棱角。<br>人生有多长，余下的不过十分之五。剩下的时间，我不想浪费。<br>世界那么大，我想出去看看，但是不是你想看就能看。<br>前进的道路是寂寞的，但不是孤独的，也许某个角落，也有和我一样的人。</p>
+<p><img src="/2017/06/12/我想出去看看/img1.jpg" alt="梦想"></p>
+]]></content>
+      
+        <categories>
+            
+            <category> 杂 </category>
+            
+        </categories>
+        
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[“kotlin开发Android：开发游戏2048”]]></title>
+      <url>/2017/06/12/kotlin%E5%BC%80%E5%8F%91Android%EF%BC%9A%E5%BC%80%E5%8F%91%E6%B8%B8%E6%88%8F2048/</url>
+      <content type="html"><![CDATA[<h2 id="基本玩法"><a href="#基本玩法" class="headerlink" title="基本玩法"></a>基本玩法</h2><p>1.经典版是4*4的♦️<br>2.每次滑动后从没有♦️的地方随机生成一个♦️，数据大小一般是2，也可以是4<br>3.每次滑动如果前方非新生成的♦️，大小相同则可以合并，如果前方是空格，则一直往前移动<br>4.最大数达到2048则赢，格子不能滑动也不能合并则游戏结束</p>
+<h2 id="基本思路"><a href="#基本思路" class="headerlink" title="基本思路"></a>基本思路</h2><h3 id="算法："><a href="#算法：" class="headerlink" title="算法："></a>算法：</h3><p>1.用一个二维数组存放方格中的数据<br>2.滑动时先根据方向，将数组进行方向变换，使得永远往X轴正向移动<br>如数组向上滑动的处理步骤<br>i.初始状态<br>0,2,0,0<br>0,2,0,0<br>0,0,0,0<br>0,0,0,0<br>ii.转换方向后(向上：顺时针90度)<br>0,0,0,0<br>0,0,2,2<br>0,0,0,0<br>0,0,0,0<br>iii.向右滑动<br>0,0,0,0<br>0,0,0,4<br>0,0,0,0<br>0,0,0,0<br>iiii.恢复原方向(逆时针90度)<br>0,4,0,0<br>0,0,0,0<br>0,0,0,0<br>0,0,0,0</p>
+<p>3.移动计算完毕后将方向转换回去<br>4.得到运动轨迹数据，刷新UI</p>
+<h3 id="UI"><a href="#UI" class="headerlink" title="UI:"></a>UI:</h3><p>1.主要游戏区域使用一个FrameLayout，当前的♦️都用BlockTextView表示<br>2.♦️的位置使用translationX，translationY调整<br>3.每个♦️做动画时使用Animator来更新translationX或者translationY<br>截图：<br><img src="https://github.com/ahong222/kotlin_2048/blob/master/game1.jpg?raw=true" alt="game1.jpg"></p>
+<h2 id="工程地址："><a href="#工程地址：" class="headerlink" title="工程地址："></a>工程地址：</h2><p><a href="https://github.com/ahong222/kotlin_2048" target="_blank" rel="external">https://github.com/ahong222/kotlin_2048</a></p>
+]]></content>
+      
+        <categories>
+            
+            <category> kotlin </category>
+            
+        </categories>
+        
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[开发Android：提升Android开发效率]]></title>
       <url>/2017/05/25/%E5%BC%80%E5%8F%91Android%EF%BC%9A%E6%8F%90%E5%8D%87Android%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87/</url>
       <content type="html"><![CDATA[<h4 id="1-去掉findViewById"><a href="#1-去掉findViewById" class="headerlink" title="1.去掉findViewById"></a>1.去掉findViewById</h4><p>只需要在App Module的build.gradle 中添加<br>apply plugin: ‘kotlin-android-extensions’//手动添加<br>代码然后就可以这样写<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">override fun onCreate(savedInstanceState: Bundle?) &#123;</div><div class="line">    super.onCreate(savedInstanceState)</div><div class="line">    setContentView(R.layout.activity_kotlin)</div><div class="line">    //直接使用activity_kotlin.xml中的id</div><div class="line">    test.setOnClickListener &#123; view-&gt; onClickTest(view) &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
